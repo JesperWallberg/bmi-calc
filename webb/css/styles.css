@@ -1,0 +1,113 @@
+:root {
+    --textColor: #1D2D44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--textColor);
+    font-family: Georgia, serif;
+}
+
+body {
+    background-color: #F9F7F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    height: 100%;
+    padding: 20px;
+    margin-top: 20px;
+   // border: #3E5C76 solid 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--textColor);
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--textColor);
+    margin: 10px 0;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+input[type=number] {
+    padding: 10px 0 10px 2px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #3E5C76;
+    color: #F9F7F0;
+    margin: 20px 0 20px 0;
+    padding: 16px 0 16px 0;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+table {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    input[type=number] {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+}
